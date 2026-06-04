@@ -80,8 +80,8 @@ const LAB_DATA = {
     {
       icon: "🏔",
       color: "#faece7",
-      title: "Himalayan Hydrology & Cryosphere",
-      desc: "Studying steep rise in extreme flows in Western Himalayan rivers, Bay of Bengal and Arabian Sea moisture contributions to Ganga Basin during monsoon extremes, and groundwater variability in coastal deltaic regions like the Sundarbans.",
+      title: "Crop Monitoring & System Development",
+      desc: "Studying Crop behaviour and capture the response to model it.",
       tag: "Active",
     },
   ],
