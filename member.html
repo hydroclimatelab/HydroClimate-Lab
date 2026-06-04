@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile — HydroClimate Lab IIT Kharagpur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .profile-wrap{max-width:1000px;margin:0 auto;padding:110px 40px 80px}
+    .back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--sky);text-decoration:none;font-size:13px;font-weight:600;margin-bottom:40px;transition:gap .2s}
+    .back-btn:hover{gap:10px}
+    .profile-header{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start;margin-bottom:56px}
+    .profile-photo-box{text-align:center}
+    .profile-photo{width:200px;height:200px;border-radius:16px;object-fit:cover;object-position:top;border:3px solid var(--light);display:block;margin:0 auto 16px}
+    .profile-avatar{width:200px;height:200px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:60px;font-weight:700;color:white;margin:0 auto 16px}
+    .profile-category{display:inline-block;background:var(--light);color:var(--sky);font-size:11px;font-weight:600;padding:5px 14px;border-radius:20px;letter-spacing:.3px;margin-bottom:12px}
+    .profile-social{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+    .profile-social a{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:7px 12px;border-radius:8px;border:1px solid var(--border);transition:all .2s}
+    .profile-social a:hover{background:var(--light);color:var(--sky);border-color:var(--sky)}
+    .profile-social a span{font-size:16px}
+    .profile-name{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.2}
+    .profile-role{font-size:16px;color:var(--sky);font-weight:600;margin-bottom:6px}
+    .profile-dept{font-size:14px;color:var(--text-muted);margin-bottom:24px}
+    .profile-meta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:28px}
+    .profile-meta-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-muted)}
+    .profile-meta-item strong{color:var(--text)}
+    .profile-bio{font-size:15px;line-height:1.85;color:var(--text-muted);font-weight:300;margin-bottom:0}
+    .profile-section{margin-bottom:40px}
+    .profile-section h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--navy);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--light)}
+    .interest-tags{display:flex;flex-wrap:wrap;gap:8px}
+    .interest-tag{background:var(--light);color:var(--sky);font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;border:1px solid var(--border)}
+    .edu-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .edu-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-muted);line-height:1.5}
+    .edu-list li::before{content:'🎓';flex-shrink:0;margin-top:1px}
+    .pub-mini{background:var(--off-white);border-left:4px solid var(--sky);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--text);line-height:1.5}
+    .pub-mini-list{display:flex;flex-direction:column;gap:10px}
+    .contact-row-mini{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-muted);margin-bottom:10px}
+    .contact-row-mini a{color:var(--sky);text-decoration:none}
+    .other-members{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
+    .other-card{background:white;border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center;text-decoration:none;color:inherit;transition:box-shadow .2s,transform .2s}
+    .other-card:hover{box-shadow:0 6px 20px rgba(10,31,60,.1);transform:translateY(-2px)}
+    .other-avatar-sm{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;margin:0 auto 8px}
+    .other-photo-sm{width:48px;height:48px;border-radius:50%;object-fit:cover;margin:0 auto 8px;display:block}
+    .other-name{font-size:12px;font-weight:600;color:var(--navy)}
+    .other-role{font-size:11px;color:var(--text-muted);margin-top:2px}
+    @media(max-width:760px){
+      .profile-wrap{padding:100px 20px 60px}
+      .profile-header{grid-template-columns:1fr;gap:28px}
+      .profile-photo-box{display:flex;flex-direction:column;align-items:center}
+      .other-members{grid-template-columns:repeat(2,1fr)}
+      .profile-name{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="HydroClimate Lab Logo" class="nav-logo-img"/>
+    <div>
+      <div class="logo-text">HydroClimate Lab</div>
+      <div class="logo-sub">IIT Kharagpur</div>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  <ul id="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="index.html#news">News</a></li>
+    <li><a href="team.html" style="color:var(--accent)">Team</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="profile-wrap" id="profile-content">
+  <!-- filled by JS -->
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo" style="width:36px;height:36px;border-radius:8px;object-fit:cover;"/>
+      <div>
+        <div style="color:white;font-size:13px;font-weight:600;">HydroClimate Lab</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.4);">IIT Kharagpur</div>
+      </div>
+    </div>
+    <p style="font-size:12px;" id="footer-year"></p>
+    <div class="footer-links">
+      <a href="team.html">← All Members</a>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  document.getElementById('footer-year').textContent = `© ${new Date().getFullYear()} HydroClimate Lab, IIT Kharagpur.`;
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));
+  window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40));
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  const member = LAB_DATA.team.find(m => m.id === id);
+  const wrap = document.getElementById('profile-content');
+
+  if (!member) {
+    wrap.innerHTML = `<a href="team.html" class="back-btn">← Back to Team</a>
+      <p style="color:var(--text-muted);font-size:16px;">Member not found. <a href="team.html" style="color:var(--sky)">View all members →</a></p>`;
+  } else {
+    document.title = `${member.name} — HydroClimate Lab IIT Kharagpur`;
+
+    // photo or avatar
+    const photoHtml = member.photo
+      ? `<img src="${member.photo}" alt="${member.name}" class="profile-photo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+         <div class="profile-avatar" style="display:none;background:linear-gradient(135deg,${member.color},${member.color}aa)">${member.initials}</div>`
+      : `<div class="profile-avatar" style="background:linear-gradient(135deg,${member.color},${member.color}aa)">${member.initials}</div>`;
+
+    // social links
+    let socialHtml = '';
+    if (member.email)         socialHtml += `<a href="mailto:${member.email}"><span>📧</span>${member.email}</a>`;
+    if (member.google_scholar) socialHtml += `<a href="${member.google_scholar}" target="_blank"><span>📚</span>Google Scholar</a>`;
+    if (member.researchgate)  socialHtml += `<a href="${member.researchgate}" target="_blank"><span>🔬</span>ResearchGate</a>`;
+    if (member.linkedin)      socialHtml += `<a href="${member.linkedin}" target="_blank"><span>💼</span>LinkedIn</a>`;
+    if (member.website)       socialHtml += `<a href="${member.website}" target="_blank"><span>🌐</span>Website / IIT KGP Page</a>`;
+
+    // meta
+    let metaHtml = '';
+    if (member.joining_year) metaHtml += `<div class="profile-meta-item">📅 <span>Joined <strong>${member.joining_year}</strong></span></div>`;
+    if (member.hometown)     metaHtml += `<div class="profile-meta-item">📍 <span>From <strong>${member.hometown}</strong></span></div>`;
+    if (member.phone)        metaHtml += `<div class="profile-meta-item">📞 <span><strong>${member.phone}</strong></span></div>`;
+
+    // education
+    const eduHtml = member.education && member.education.length
+      ? `<div class="profile-section"><h3>Education</h3>
+           <ul class="edu-list">${member.education.map(e => `<li>${e}</li>`).join('')}</ul>
+         </div>` : '';
+
+    // interests
+    const intHtml = member.interests && member.interests.length
+      ? `<div class="profile-section"><h3>Research Interests</h3>
+           <div class="interest-tags">${member.interests.map(i => `<span class="interest-tag">${i}</span>`).join('')}</div>
+         </div>` : '';
+
+    // publications
+const pubHtml = member.publications && member.publications.length
+  ? `
+    <div class="profile-section">
+      <h3>Publications</h3>
+
+      <div class="pub-mini-list">
+
+        ${member.publications.map((p, index) => `
+          
+          <div class="pub-mini">
+
+            <strong>${index + 1}. ${p.title}</strong><br>
+
+            ${p.authors} (${p.year})<br>
+
+            <em>${p.journal}</em>, ${p.volume}, ${p.pages}<br>
+
+            <a href="${p.scholar}" target="_blank">
+              View on Google Scholar
+            </a>
+
+          </div>
+
+        `).join('')}
+
+      </div>
+    </div>
+  `
+  : '';
+
+    // other members
+    const others = LAB_DATA.team.filter(m => m.id !== member.id).slice(0, 4);
+    const othersHtml = `<div class="profile-section"><h3>Other Lab Members</h3>
+      <div class="other-members">
+        ${others.map(m => {
+          const av = m.photo
+            ? `<img src="${m.photo}" alt="${m.name}" class="other-photo-sm" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+               <div class="other-avatar-sm" style="display:none;background:linear-gradient(135deg,${m.color},${m.color}aa)">${m.initials}</div>`
+            : `<div class="other-avatar-sm" style="background:linear-gradient(135deg,${m.color},${m.color}aa)">${m.initials}</div>`;
+          return `<a href="member.html?id=${m.id}" class="other-card">${av}
+            <div class="other-name">${m.name}</div>
+            <div class="other-role">${m.role}</div>
+          </a>`;
+        }).join('')}
+      </div>
+    </div>`;
+
+    wrap.innerHTML = `
+      <a href="team.html" class="back-btn">← Back to Research Group</a>
+      <div class="profile-header">
+        <div class="profile-photo-box">
+          ${photoHtml}
+          <span class="profile-category">${member.category}</span>
+          <div class="profile-social">${socialHtml || '<p style="font-size:12px;color:var(--text-muted)">Contact details coming soon</p>'}</div>
+        </div>
+        <div>
+          <div class="profile-name">${member.name}</div>
+          <div class="profile-role">${member.role}</div>
+          <div class="profile-dept">HydroClimate Lab ·|· IIT Kharagpur ·|· Dept. of Agricultural & Food Engineering</div>
+          <div class="profile-meta">${metaHtml}</div>
+          <p class="profile-bio">${member.bio}</p>
+        </div>
+      </div>
+
+      ${intHtml}
+      ${eduHtml}
+      ${pubHtml}
+      ${othersHtml}
+    `;
+  }
+</script>
+</body>
+</html>

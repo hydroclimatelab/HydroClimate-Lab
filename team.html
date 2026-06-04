@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research Group — HydroClimate Lab IIT Kharagpur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .team-page-hero{background:var(--navy);padding:130px 60px 60px;text-align:center}
+    .team-page-hero .section-label{color:var(--accent);justify-content:center;display:flex}
+    .team-page-hero h1{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:white;margin-bottom:14px}
+    .team-page-hero p{font-size:16px;color:rgba(255,255,255,.65);max-width:600px;margin:0 auto;line-height:1.7;font-weight:300}
+    .team-section-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--navy);margin-bottom:24px;padding-bottom:10px;border-bottom:2px solid var(--light)}
+    .team-section-title span{font-size:13px;font-weight:400;color:var(--text-muted);margin-left:10px;font-family:'Source Sans 3',sans-serif}
+    .team-full-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:50px}
+    .team-full-card{background:white;border-radius:14px;border:1px solid var(--border);overflow:hidden;transition:transform .2s,box-shadow .2s;text-decoration:none;color:inherit;display:block}
+    .team-full-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(10,31,60,.12)}
+    .team-card-top{height:170px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--off-white)}
+    .team-card-photo{width:100%;height:100%;object-fit:cover;object-position:top center}
+    .team-card-avatar{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:white}
+    .team-card-body{padding:16px 16px 18px}
+    .team-card-name{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px}
+    .team-card-role{font-size:12px;color:var(--text-muted);margin-bottom:6px}
+    .team-card-research{font-size:11px;color:var(--sky);font-style:italic;line-height:1.4;margin-bottom:10px}
+    .team-card-btn{display:inline-block;font-size:11px;font-weight:600;color:var(--sky);background:var(--light);padding:4px 12px;border-radius:12px;transition:all .2s}
+    .team-full-card:hover .team-card-btn{background:var(--sky);color:white}
+    .join-section{background:var(--navy);border-radius:16px;padding:48px 40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:20px}
+    .join-section h3{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:white;margin-bottom:12px}
+    .join-section p{font-size:14px;color:rgba(255,255,255,.7);line-height:1.75;font-weight:300}
+    .join-positions{display:flex;flex-direction:column;gap:12px}
+    .join-position{background:rgba(255,255,255,.06);border:1px solid rgba(74,179,232,.25);border-radius:10px;padding:16px 18px}
+    .join-position h4{font-size:14px;font-weight:600;color:var(--accent);margin-bottom:4px}
+    .join-position p{font-size:12px;color:rgba(255,255,255,.65);line-height:1.5;margin:0}
+    @media(max-width:900px){
+      .team-page-hero{padding:110px 24px 48px}
+      .team-full-grid{grid-template-columns:repeat(2,1fr)}
+      .join-section{grid-template-columns:1fr;padding:32px 24px}
+      section{padding:60px 24px}
+    }
+    @media(max-width:560px){.team-full-grid{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="HydroClimate Lab Logo" class="nav-logo-img"/>
+    <div>
+      <div class="logo-text">HydroClimate Lab</div>
+      <div class="logo-sub">IIT Kharagpur</div>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  <ul id="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="index.html#news">News</a></li>
+    <li><a href="team.html" style="color:var(--accent)">Team</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="team-page-hero">
+  <div class="section-label">IIT Kharagpur · Agricultural & Food Engineering</div>
+  <h1>Our Research Group</h1>
+  <p>A diverse team of researchers working together to understand the hydroclimate of South Asia — from monsoon dynamics to extreme rainfall, drought, and atmospheric rivers.</p>
+</div>
+
+<section style="padding:70px 60px;">
+
+  <!-- Faculty / PI -->
+  <div class="team-section-title">Principal Investigator <span id="faculty-count"></span></div>
+  <div class="team-full-grid" id="grid-faculty"></div>
+
+  <!-- Postdoc -->
+  <div id="postdoc-section" style="display:none">
+    <div class="team-section-title">Postdoctoral Researchers <span id="postdoc-count"></span></div>
+    <div class="team-full-grid" id="grid-postdoc"></div>
+  </div>
+
+  <!-- PhD -->
+  <div id="phd-section" style="display:none">
+    <div class="team-section-title">PhD Scholars <span id="phd-count"></span></div>
+    <div class="team-full-grid" id="grid-phd"></div>
+  </div>
+
+  <!-- MTech / Masters -->
+  <div id="mtech-section" style="display:none">
+    <div class="team-section-title">M.Tech / Master's Students <span id="mtech-count"></span></div>
+    <div class="team-full-grid" id="grid-mtech"></div>
+  </div>
+
+  <!-- Project / Research Staff -->
+  <div id="rs-section" style="display:none">
+    <div class="team-section-title">Research Scholars <span id="rs-count"></span></div>
+    <div class="team-full-grid" id="grid-rs"></div>
+  </div>
+
+  <!-- Alumni -->
+  <div id="alumni-section" style="display:none">
+    <div class="team-section-title">Alumni <span id="alumni-count"></span></div>
+    <div class="team-full-grid" id="grid-alumni"></div>
+  </div>
+
+  <div class="join-section" id="join">
+    <div>
+      <h3>Join Our Team</h3>
+      <p>We are looking for motivated researchers to join the Hydroclimate Lab. We welcome applications from candidates with backgrounds in atmospheric science, hydrology, remote sensing, agricultural engineering, or related fields with strong quantitative and programming skills.</p>
+      <br/>
+      <a href="index.html#contact" class="btn-primary">Apply / Contact Us →</a>
+    </div>
+    <div class="join-positions">
+      <div class="join-position">
+        <h4>🎓 PhD Positions</h4>
+        <p>Fully funded positions available. Strong background in quantitative sciences required. Apply through the IIT KGP admissions portal.</p>
+      </div>
+      <div class="join-position">
+        <h4>🔬 Postdoctoral Positions</h4>
+        <p>Eligible candidates may apply for the ANRF National Postdoc Fellowship. Areas: hydroclimate, AI/ML, remote sensing.</p>
+      </div>
+      <div class="join-position">
+        <h4>📐 M.Tech / Project</h4>
+        <p>Project assistantships available for IIT KGP M.Tech students interested in climate and water research.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo" style="width:36px;height:36px;border-radius:8px;object-fit:cover;"/>
+      <div>
+        <div style="color:white;font-size:13px;font-weight:600;">HydroClimate Lab</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.4);">Dept. of Agricultural & Food Engineering, IIT KGP</div>
+      </div>
+    </div>
+    <p style="font-size:12px;" id="footer-year"></p>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=do9u7u8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a href="index.html">← Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  document.getElementById('footer-year').textContent = `© ${new Date().getFullYear()} Hydroclimate Lab, IIT Kharagpur. All rights reserved.`;
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));
+  window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40));
+
+  function makeCard(m) {
+    const topHtml = m.photo
+      ? `<img src="${m.photo}" alt="${m.name}" class="team-card-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+         <div class="team-card-avatar" style="display:none;background:linear-gradient(135deg,${m.color},${m.color}aa)">${m.initials}</div>`
+      : `<div class="team-card-avatar" style="background:linear-gradient(135deg,${m.color},${m.color}aa)">${m.initials}</div>`;
+    return `<a href="member.html?id=${m.id}" class="team-full-card">
+      <div class="team-card-top">${topHtml}</div>
+      <div class="team-card-body">
+        <div class="team-card-name">${m.name}</div>
+        <div class="team-card-role">${m.role}</div>
+        <div class="team-card-research">${m.research}</div>
+        <span class="team-card-btn">View Profile →</span>
+      </div>
+    </a>`;
+  }
+
+  const faculty  = LAB_DATA.team.filter(m => m.category === 'Faculty');
+  const postdoc  = LAB_DATA.team.filter(m => m.category === 'Postdoc');
+  const phd      = LAB_DATA.team.filter(m => m.category === 'PhD Scholar');
+  const mtech    = LAB_DATA.team.filter(m => m.category === 'MTech' || m.category === 'Master Students');
+  const rs       = LAB_DATA.team.filter(m => m.category === 'Research Scholar');
+  const alumni   = LAB_DATA.team.filter(m => m.category === 'Alumni');
+
+  function renderSection(sectionId, gridId, countId, members, label) {
+    if (members.length > 0) {
+      document.getElementById(sectionId).style.display = 'block';
+      document.getElementById(gridId).innerHTML = members.map(makeCard).join('');
+      document.getElementById(countId).textContent = `${members.length} member${members.length > 1 ? 's' : ''}`;
+    }
+  }
+
+  // Faculty always shown
+  document.getElementById('grid-faculty').innerHTML = faculty.map(makeCard).join('');
+  document.getElementById('faculty-count').textContent = `${faculty.length} member${faculty.length > 1 ? 's' : ''}`;
+
+  renderSection('postdoc-section', 'grid-postdoc', 'postdoc-count', postdoc);
+  renderSection('phd-section',     'grid-phd',     'phd-count',     phd);
+  renderSection('mtech-section',   'grid-mtech',   'mtech-count',   mtech);
+  renderSection('rs-section',      'grid-rs',       'rs-count',      rs);
+  renderSection('alumni-section',  'grid-alumni',   'alumni-count',  alumni);
+</script>
+</body>
+</html>
