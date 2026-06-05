@@ -289,7 +289,7 @@ const LAB_DATA = {
       role: "Research Scholar",
       category: "Research Scholar",
       research: "S2S Prediction, Reliability Indices",
-      photo: "images/ranjeet.jpg",   // ← add images/ranjeet.jpg
+      photo: "images/Ranjeet.jpg",   // ← add images/ranjeet.jpg
       initials: "RB",
       color: "#0f7b8c",
       email: "",
