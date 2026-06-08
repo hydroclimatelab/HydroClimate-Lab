@@ -71,14 +71,14 @@ const LAB_DATA = {
       tag: "Active",
     },
     {
-      icon: "🤖",
+      icon: "🤖🖥️",
       color: "#eaf3de",
       title: "AI/ML in Climate & Agriculture",
       desc: "Application of machine learning, deep learning, and geoinformatics for climate prediction, crop water stress detection (spectral reflectance studies), and agro-informatics.",
       tag: "Growing",
     },
     {
-      icon: "🏔",
+      icon: "🌱🌾",
       color: "#faece7",
       title: "Crop Monitoring & System Development",
       desc: "Studying Crop behaviour and capture the response to model it.",
