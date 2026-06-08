@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+    <title>Publications | HydroClimate Lab</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/publications.css">
+</head>
+
+<body>
+
+    <!-- Navigation (Links fixed to point to index.html and style matches team.html) -->
+    <nav id="navbar">
+      <a class="nav-logo" href="index.html">
+        <img src="images/logo.png" alt="HydroClimate Lab IIT KGP Logo" class="nav-logo-img"/>
+        <div>
+          <div class="logo-text" id="nav-labname">HydroClimate Lab</div>
+          <div class="logo-sub" id="nav-institute">IIT Kharagpur</div>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+      <ul id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="publications.html" style="color:var(--accent)">Publications</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- Hero Section (Restored to your original style so background stays the same) -->
+    <section class="hero-small">
+        <div class="container">
+            <div class="section-label">
+                Research Output
+            </div>
+            <h1 class="section-title">
+                Publications
+            </h1>
+            <div class="section-divider"></div>
+            <p class="hero-description">
+                Explore our peer-reviewed journal articles,
+                conference papers, technical reports, and
+                research contributions in hydroclimatology,
+                remote sensing, digital agriculture, and AI.
+            </p>
+            <div class="pub-actions">
+                <a href="index.html" class="btn-primary">
+                    ← Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div id="publication-stats" class="stats-grid">
+                <!-- Stats will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Filters -->
+    <section class="container">
+        <div class="publication-filters">
+            <button class="filter-btn active" data-type="All">
+                All Publications
+            </button>
+            <button class="filter-btn" data-type="Journal">
+                Journal Articles
+            </button>
+            <button class="filter-btn" data-type="Conference">
+                Conference Papers
+            </button>
+        </div>
+    </section>
+
+    <!-- Publication List -->
+    <section class="container">
+        <div id="publications-container" class="publications-container">
+            <!-- Publications will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 HydroClimate Lab. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/publication_data.js"></script>
+    <script src="js/publications.js"></script>
+    
+    <!-- Mobile Hamburger Menu Script Added -->
+    <script>
+        document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));
+        window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40));
+    </script>
+
+</body>
+
+</html>

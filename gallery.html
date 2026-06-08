@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Gallery — HydroClimate Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .gallery-page-hero { background: var(--navy); padding: 130px 60px 60px; text-align: center; }
+    .gallery-page-hero .section-label { color: var(--accent); justify-content: center; display: flex; }
+    .gallery-page-hero h1 { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 700; color: white; margin-bottom: 14px; }
+    .gallery-page-hero p { font-size: 16px; color: rgba(255,255,255,.65); max-width: 600px; margin: 0 auto; line-height: 1.7; font-weight: 300; }
+    @media(max-width:900px) {
+      .gallery-page-hero { padding: 110px 24px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="HydroClimate Lab Logo" class="nav-logo-img"/>
+    <div>
+      <div class="logo-text">HydroClimate Lab</div>
+      <div class="logo-sub">IIT Kharagpur</div>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  <ul id="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="index.html#news">News</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="gallery.html" style="color:var(--accent)">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="gallery-page-hero">
+  <div class="section-label">Lab Life & Moments</div>
+  <h1>Photo Gallery</h1>
+  <p>Glimpses of our research activities, field campaigns, conferences, workshop events, and life at the HydroClimate Lab, IIT Kharagpur.</p>
+</div>
+
+<section class="alt-bg" style="padding:70px 60px;">
+  <div class="gallery-grid" id="gallery-grid"></div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lb-close">✕</button>
+  <img id="lb-img" src="" alt=""/>
+  <p id="lb-caption"></p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo" style="width:36px;height:36px;border-radius:8px;object-fit:cover;"/>
+      <div>
+        <div style="color:white;font-size:13px;font-weight:600;">HydroClimate Lab</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.4);">Dept. of Agricultural & Food Engineering, IIT KGP</div>
+      </div>
+    </div>
+    <p style="font-size:12px;">© 2026 HydroClimate Lab, IIT Kharagpur. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=do9u7u8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a href="index.html">← Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/gallery_data.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
