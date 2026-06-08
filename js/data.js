@@ -1002,7 +1002,7 @@ contact: {
     office_hours: "Monday – Friday: 10:00 AM – 5:00 PM IST",
     google_maps: "https://maps.google.com/?q=IIT+Kharagpur",
     // ← PASTE YOUR GOOGLE FORM LINK HERE
-    google_form: "https://docs.google.com/forms/d/e/1FAIpQLScvhJjdQ4rVCPiBvqMp5JIIF1_-kd3RFOr-WjErgejeMPJFZw/viewform?usp=dialog",
+    google_form: "https://docs.google.com/forms/d/e/1FAIpQLSeWquUoHWr72m74qGsZMKQSx691AOO3rPL6MotmT-JUFJ8RlQ/viewform?usp=publish-editor",
   },
 
 };
