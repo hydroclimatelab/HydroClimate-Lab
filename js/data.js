@@ -19,7 +19,7 @@ const LAB_DATA = {
     short_name: "Prof. Pathak",
     title: "Assistant Professor, Agricultural & Food Engineering Department",
     photo: "images/Professor.png",
-    email: "amey@agfe.iitkgp.ac.in",
+    email: "amey[at]agfe[dot]iitkgp[dot]ac[dot]in",
     phone: "+91-3222-283XXX",
     office: "Room No.:111, Agricultural & Food Engineering Dept., IIT Kharagpur — 721302, West Bengal, India",
     degree: "Ph.D., IIT Bombay (2017) · M.Tech, IIT Bombay (2010) · B.Tech, MPKV Rahuri (2008)",
