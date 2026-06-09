@@ -146,36 +146,32 @@
            <div class="interest-tags">${member.interests.map(i => `<span class="interest-tag">${i}</span>`).join('')}</div>
          </div>` : '';
 
-    // publications
-const pubHtml = member.publications && member.publications.length
-  ? `
-    <div class="profile-section">
-      <h3>Publications</h3>
+// publications
+    const pubHtml = member.publications && member.publications.length
+      ? `
+        <div class="profile-section">
+          <h3>Publications</h3>
+          <div class="pub-mini-list">
+            ${member.publications.map((p, index) => `
+              
+              <div class="pub-mini">
+                <strong>${index + 1}. ${p.title}</strong><br>
+                <span style="color:var(--text-muted); font-size:13px;">${p.authors} (${p.year})</span><br>
+                
+                <em style="color:#1a4a8a;">${p.publication}</em>${p.volume ? `, Vol. ${p.volume}` : ''}${p.pages ? `, pp. ${p.pages}` : ''}<br>
 
-      <div class="pub-mini-list">
+                ${p.doi ? `
+                  <a href="${p.doi}" target="_blank" style="display:inline-block; margin-top:8px; font-size:12px; font-weight:600; color:var(--sky); text-decoration:none; border:1px solid var(--border); padding:4px 10px; border-radius:12px; background:white;">
+                    🔗 View Article / DOI ↗
+                  </a>
+                ` : ''}
+              </div>
 
-        ${member.publications.map((p, index) => `
-          
-          <div class="pub-mini">
-
-            <strong>${index + 1}. ${p.title}</strong><br>
-
-            ${p.authors} (${p.year})<br>
-
-            <em>${p.journal}</em>, ${p.volume}, ${p.pages}<br>
-
-            <a href="${p.scholar}" target="_blank">
-              View on Google Scholar
-            </a>
-
+            `).join('')}
           </div>
-
-        `).join('')}
-
-      </div>
-    </div>
-  `
-  : '';
+        </div>
+      `
+      : '';
 
     // other members
     const others = LAB_DATA.team.filter(m => m.id !== member.id).slice(0, 4);
