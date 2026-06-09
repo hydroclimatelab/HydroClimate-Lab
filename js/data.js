@@ -185,7 +185,7 @@ const LAB_DATA = {
       interests: ["S2S Prediction", "Monsoon Forecasting", "Reliability Indices", "Climate Services"],
       publications: [
         {
-      "authors": "Bais, Ranjeet Singh, Pathak, Amey",
+      "authors": "Ranjeet Singh Bais, Amey Pathak",
       "title": "Extreme learning machine based sub-seasonal forecasting of Indian Monsoon rainfall over core monsoon zone",
       "publication": "Theoretical and Applied Climatology",
       "volume": "157",
@@ -194,7 +194,7 @@ const LAB_DATA = {
       "year": "2026",
       "publisher": "Springer Nature; https://doi.org/10.1007/s00704-026-06274-z",
       "type": "Journal",
-      "doi": "10.1007/s00704-026-06274-z"
+      "doi": "https://doi.org/10.1007/s00704-026-06274-z"
     },
 
         
