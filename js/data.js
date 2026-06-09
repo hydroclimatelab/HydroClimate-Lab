@@ -752,8 +752,8 @@ const LAB_DATA = {
 
   contact: {
     address: "Agricultural & Food Engineering Department\nIIT Kharagpur, Kharagpur — 721302\nWest Bengal, India",
-    email_pi: "amey@agfe.iitkgp.ac.in",
-    email_lab: "hydroclimate.lab@iitkgp.ac.in",
+    email_pi: "amey[at]agfe[dot]iitkgp[dot]ac[dot]in",
+    email_lab: "hydroclimatelab[at]gmail[dot]com",
     phone: "+91-3222-283XXX",
     office_hours: "Monday – Friday: 10:00 AM – 5:00 PM IST",
     google_maps: "https://maps.google.com/?q=IIT+Kharagpur",
