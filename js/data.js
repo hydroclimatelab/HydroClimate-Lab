@@ -133,8 +133,9 @@ const LAB_DATA = {
       ],
       bio: "Ranjan Kumar is working in the areas of atmospheric moisture transport, precipitation recycling, and extreme rainfall dynamics associated with the Indian Summer Monsoon. His research focuses on understanding moisture pathways, land–atmosphere interactions, hydroclimatic extremes, and sustainable water resource systems using geospatial analysis, remote sensing, and environmental modelling. Ranjan's research focuses on the atmospheric moisture budget during ENSO years and its relationship to Indian Summer Monsoon rainfall variability. He uses reanalysis datasets and diagnostic tools to study evaporation-precipitation balance during contrasting climate years.",
       interests: ["Precipitation Recycling", "Atmospheric Moisture Transport", "Monsoon Variability", "Reanalysis Data", "Indian Summer Monsoon Rainfall"],
-      publications: [{
-      "authors": "Kumar, Ranjan, Pathak, Amey, Shashikanth, Kulkarni",
+      publications: [
+        {
+      "authors": "Ranjan Kumar, Amey Pathak, Shashikanth Kulkarni",
       "title": "Climatic and transient controls on Indian monsoon E-P variability using moisture-budget decomposition",
       "publication": "Environmental Research Communications",
       "volume": "",
@@ -143,8 +144,20 @@ const LAB_DATA = {
       "year": "2026",
       "publisher": "IOP Science",
       "type": "Journal",
-      "doi": "https://iopscience.iop.org/article/10.1088/2515-7620/ae73ee/meta"
-    }],
+      "doi": "https://iopscience.iop.org/article/10.1088/2515-7620/ae73ee/meta"},
+         {
+      "authors": "Ranjan Kumar, Amey Pathak",
+      "title": "Lagrangian quantification of atmospheric moisture sources for extreme rainfall events over India during the 2023 summer monsoon",
+      "publication": "Science of the Total Environment https://doi.org/10.1016/j.scitotenv.2025.180389",
+      "volume": "1000",
+      "number": "",
+      "pages": "180389",
+      "year": "2025",
+      "publisher": "Elsevier, https://doi.org/10.1016/j.scitotenv.2025.180389",
+      "type": "Journal",
+      "doi": "https://doi.org/10.1016/j.scitotenv.2025.180389"},
+      
+      ],
       google_scholar: "https://scholar.google.com/citations?user=JwmdFqMAAAAJ&hl=en",
       researchgate: "",
       linkedin: "https://www.linkedin.com/in/ranjan-kumar-0527601b1/?skipRedirect=true",
@@ -170,7 +183,22 @@ const LAB_DATA = {
       ],
       bio: "Ranjeet is working on Seasonal-to-Subseasonal (S2S) weather prediction reliability indices for societal applications. His work focuses on improving the usability of S2S model forecasts for agriculture and disaster management.",
       interests: ["S2S Prediction", "Monsoon Forecasting", "Reliability Indices", "Climate Services"],
-      publications: [],
+      publications: [
+        {
+      "authors": "Bais, Ranjeet Singh, Pathak, Amey",
+      "title": "Extreme learning machine based sub-seasonal forecasting of Indian Monsoon rainfall over core monsoon zone",
+      "publication": "Theoretical and Applied Climatology",
+      "volume": "157",
+      "number": "325",
+      "pages": "325",
+      "year": "2026",
+      "publisher": "Springer Nature; https://doi.org/10.1007/s00704-026-06274-z",
+      "type": "Journal",
+      "doi": "10.1007/s00704-026-06274-z"
+    },
+
+        
+      ],
       google_scholar: "",
       researchgate: "",
       linkedin: "https://www.linkedin.com/in/ranjeet-singh-bais-a7582b180/",
@@ -196,7 +224,21 @@ const LAB_DATA = {
       ],
       bio: "Alok is studying the response of crops under biotic and abiotic stress using remote sensing, AI and transforming all information in the digital world (digital agriculture).",
       interests: ["Digital Agriculture", "RS and GIS application in Agriculture", "IoTs", "AI in Agriculture"],
-      publications: [],
+      publications: [
+        {
+      "authors": "Alok Kumar Maurya, Amey Pathak ",
+      "title": "Leveraging the use of digital agriculture and machine learning for accurate prediction of Leaf Area Index (LAI)",
+      "publication": "Computers and Electronics in Agriculture",
+      "volume": "239",
+      "number": "110947, ISSN 0168-1699",
+      "pages": "",
+      "year": "2025",
+      "publisher": "Elsevier, https://doi.org/10.1016/j.compag.2025.110947",
+      "type": "Journal",
+      "doi": "https://doi.org/10.1016/j.compag.2025.110947"
+    },
+
+      ],
       google_scholar: "https://scholar.google.com/citations?user=TmQQe0sAAAAJ&hl=en",
       researchgate: "",
       linkedin: "https://www.linkedin.com/feed/",
