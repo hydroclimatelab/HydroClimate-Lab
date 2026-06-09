@@ -767,7 +767,7 @@ const LAB_DATA = {
     },
     {
       date: "Recently 2026",
-      text: "Ranjeet Singh Bais & Amey Pathak have published a research article: Extreme learning machine based sub-seasonal forecasting of Indian Monsoon rainfall over core monsoon zone.",
+      text: "Ranjeet Singh Bais & Amey Pathak have published a research article: <strong>Extreme learning machine based sub-seasonal forecasting of Indian Monsoon rainfall over core monsoon zone.<strong>",
       link: "https://link.springer.com/article/10.1007/s00704-026-06274-z",
       linkText: "Read Article"
     },
