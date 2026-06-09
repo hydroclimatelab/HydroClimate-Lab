@@ -282,7 +282,7 @@ const LAB_DATA = {
     },
     {
       id: "Kshitij",
-      name: "Kshitij",
+      name: "Kshitish",
       role: "Alumni",
       category: "Alumni",
       research: "Climate Modelling",
@@ -297,7 +297,7 @@ const LAB_DATA = {
         "M.Tech, IIT Kharagpur, India (2020)",
         " B.Tech, Agricultural Engineering, Odisha University of Agriculture and Technology, India (2018)",
       ],
-      bio: "Kshitij is currently working as an Assistant Soil Conservation Officer",
+      bio: "Kshitish is currently working as an Assistant Soil Conservation Officer",
       interests: ["Climate Change", "Soil and Water Conservation"],
       publications: [],
       google_scholar: "",
