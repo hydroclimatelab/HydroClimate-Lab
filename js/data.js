@@ -96,7 +96,7 @@ const LAB_DATA = {
       photo: "images/Professor.png",
       initials: "AP",
       color: "#1a4a8a",
-      email: "amey@agfe.iitkgp.ac.in",
+      email: "amey[at]agfe[dot]iitkgp[dot]ac[dot]in",
       phone: "+91-3222-283XXX",
       joining_year: "2018",
       hometown: "Maharashtra, India",
