@@ -21,7 +21,7 @@ const LAB_DATA = {
     photo: "images/Professor.png",
     email: "amey[at]agfe[dot]iitkgp[dot]ac[dot]in",
     phone: "+91-3222-283XXX",
-    office: "Room No.:111, Agricultural & Food Engineering Dept., IIT Kharagpur — 721302, West Bengal, India",
+    office: "Room No.:FP206, Agricultural & Food Engineering Dept., IIT Kharagpur — 721302, West Bengal, India",
     degree: "Ph.D., IIT Bombay (2017) · M.Tech, IIT Bombay (2010) · B.Tech, MPKV Rahuri (2008)",
     bio: `Prof. Amey Pathak is an Assistant Professor in the Department of Agricultural & Food Engineering at IIT Kharagpur. His research sits at the intersection of <strong>hydroclimatology, monsoon dynamics, and land-atmosphere interactions</strong>, with a focus on South Asia's complex water-climate system.<br/><br/>
     He completed his Ph.D. from IIT Bombay where he pioneered the use of <strong>Dynamic Recycling Models</strong> to quantify precipitation recycling during the Indian Summer Monsoon. His work has been cited over <strong>2,000 times</strong> and published in leading journals including <em>Nature Climate Change</em>, <em>Nature Communications</em>, <em>Journal of Hydrometeorology</em>, and <em>Geophysical Research Letters</em>.<br/><br/>
