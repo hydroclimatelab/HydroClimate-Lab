@@ -99,7 +99,7 @@ const LAB_DATA = {
       email: "amey[at]agfe[dot]iitkgp[dot]ac[dot]in",
       phone: "+91-3222-283XXX",
       joining_year: "2018",
-      hometown: "Maharashtra, India",
+      hometown: "M.P., Maharashtra, India",
       education: [
         "Ph.D., Civil Engineering, IIT Bombay (2017), India",
         "M.Tech, Natural Resources Engineering, IIT Bombay (2010), India",
