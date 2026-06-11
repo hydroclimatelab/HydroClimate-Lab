@@ -761,6 +761,12 @@ const LAB_DATA = {
   news: [
     {
       date: "Recently 2026",
+      text: "Maurya, A.K., Behera, B.R. & Pathak, A. have published a research article: <strong>IoT-enabled YOLO-based Real-time Weed Infestation Detection and Alert System for Potato Crop Management.</strong>",
+      link: "https://link.springer.com/article/10.1007/s11540-026-10087-y#citeas",
+      linkText: "Read Article"
+    },
+    {
+      date: "Recently 2026",
       text: "Ranjan Kumar, Amey Pathak & Kulkarni Shashikanth have published a research article: <strong>Climatic and transient controls on Indian monsoon E-P variability using moisture-budget decomposition.</strong>",
       link: "https://iopscience.iop.org/article/10.1088/2515-7620/ae73ee/meta",
       linkText: "Read Article"
