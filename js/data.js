@@ -790,7 +790,7 @@ const LAB_DATA = {
       title: "EGU General Assembly 2026",
       date: "2026",
       role: "Presenter",
-      description: "We have presented two works at EGU General Assembly 2026 with the titles - Assessment of droughts and extremes over India using CMIP6 simulations (Author: Amey Pathak, Shashikanth Kulkarni, Kaustubh Salvi, Hima Saji, Harish Gupta, Banoth Tejaswi) and Evaluating SAM3 and Conventional Image Processing Method for Potato Canopy Cover Estimation as an Indicator of Crop Health (Author: Alok Kumar Maurya and Amey Pathak).",
+      description: "We have presented two works at EGU General Assembly 2026 with the titles -<strong> Assessment of droughts and extremes over India using CMIP6 simulations <strong> (Author: Amey Pathak, Shashikanth Kulkarni, Kaustubh Salvi, Hima Saji, Harish Gupta, Banoth Tejaswi) and <strong>Evaluating SAM3 and Conventional Image Processing Method for Potato Canopy Cover Estimation as an Indicator of Crop Health <strong> (Author: Alok Kumar Maurya and Amey Pathak).",
       images: ["images/activities/egu261.jpeg", "images/activities/egu262.jpeg"]
     },
     {
