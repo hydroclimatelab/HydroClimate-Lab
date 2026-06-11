@@ -38,7 +38,7 @@ const publicationsData = {
       "doi": "10.1016/j.scitotenv.2025.180389"
     },
     {
-      "authors": "K Maurya, Alok, Pathak, Amey",
+      "authors": "Maurya, Alok kumar, Pathak, Amey",
       "title": "Leveraging the use of digital agriculture and machine learning for accurate prediction of Leaf Area Index (LAI)",
       "publication": "Computers and Electronics in Agriculture",
       "volume": "239",
@@ -48,6 +48,18 @@ const publicationsData = {
       "publisher": "Elsevier, https://doi.org/10.1016/j.compag.2025.110947",
       "type": "Journal",
       "doi": "10.1016/j.compag.2025.110947"
+    },
+    {
+      "authors": "Maurya, Alok Kumar, Behera, Bikash Ranjan, Pathak, Amey",
+      "title": "IoT-enabled YOLO-based Real-time Weed Infestation Detection and Alert System for Potato Crop Management",
+      "publication": "Potato Research (European Association for Potato Research)",
+      "volume": "132",
+      "number": "69:132",
+      "pages": "1-30",
+      "year": "2026",
+      "publisher": "Springer Nature, https://doi.org/10.1007/s11540-026-10087-y",
+      "type": "Journal",
+      "doi": "doi.org/10.1007/s11540-026-10087-y"
     },
     {
       "authors": "Kumar, Ranjan, Pathak, Amey",
