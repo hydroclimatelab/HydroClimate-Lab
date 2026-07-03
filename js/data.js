@@ -608,7 +608,7 @@ const LAB_DATA = {
     },
     {
       id: "Chitta",
-      name: "Chitranjan",
+      name: "Chitta Ranjan Dash",
       role: "Alumni",
       category: "Alumni",
       research: "Climate modelling",
