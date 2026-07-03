@@ -225,6 +225,18 @@ const LAB_DATA = {
       bio: "Alok is studying the response of crops under biotic and abiotic stress using remote sensing, AI and transforming all information in the digital world (digital agriculture).",
       interests: ["Digital Agriculture", "RS and GIS application in Agriculture", "IoTs", "AI in Agriculture"],
       publications: [
+            {
+      "authors": "Maurya, Alok Kumar, Behera, Bikash Ranjan, Pathak, Amey",
+      "title": "IoT-enabled YOLO-based Real-time Weed Infestation Detection and Alert System for Potato Crop Management",
+      "publication": "Potato Research (European Association for Potato Research)",
+      "volume": "132",
+      "number": "69:132",
+      "pages": "1-30",
+      "year": "2026",
+      "publisher": "Springer Nature, https://doi.org/10.1007/s11540-026-10087-y",
+      "type": "Journal",
+      "doi": "https://doi.org/10.1007/s11540-026-10087-y"
+    },
         {
       "authors": "Alok Kumar Maurya, Amey Pathak ",
       "title": "Leveraging the use of digital agriculture and machine learning for accurate prediction of Leaf Area Index (LAI)",
@@ -317,7 +329,7 @@ const LAB_DATA = {
       bio: "Sumit is currently working as a Research Scholar at WRDM Department, Indian Institute of Technology, Roorkee",
       interests: ["Remote Sensing and GIS", "Land and water resource assessment","Crop Monitoring","UAV application in Agriculture"],
       publications: [],
-      google_scholar: "https://scholar.google.com/citations?hl=en&user=QdZUfK4AAAAJ&view_op=list_works&sortby=pubdate",
+      google_scholar: "",
       researchgate: "https://www.researchgate.net/profile/Sumit-Vishwakarma-6",
       linkedin: "https://www.linkedin.com/in/sumit-vishwakarma-a82247366/",
       website: "",
