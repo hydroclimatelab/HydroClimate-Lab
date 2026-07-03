@@ -225,8 +225,7 @@ const LAB_DATA = {
       bio: "Alok is studying the response of crops under biotic and abiotic stress using remote sensing, AI and transforming all information in the digital world (digital agriculture).",
       interests: ["Digital Agriculture", "RS and GIS application in Agriculture", "IoTs", "AI in Agriculture"],
       publications: [
-            {
-      "authors": "Maurya, Alok Kumar, Behera, Bikash Ranjan, Pathak, Amey",
+      {"authors": "Alok Kumar Maurya, Bikash Ranjan Behera, Amey Pathak",
       "title": "IoT-enabled YOLO-based Real-time Weed Infestation Detection and Alert System for Potato Crop Management",
       "publication": "Potato Research (European Association for Potato Research)",
       "volume": "132",
@@ -235,10 +234,9 @@ const LAB_DATA = {
       "year": "2026",
       "publisher": "Springer Nature, https://doi.org/10.1007/s11540-026-10087-y",
       "type": "Journal",
-      "doi": "https://doi.org/10.1007/s11540-026-10087-y"
-    },
-        {
-      "authors": "Alok Kumar Maurya, Amey Pathak ",
+      "doi": "https://doi.org/10.1007/s11540-026-10087-y"},
+        
+      {"authors": "Alok Kumar Maurya, Amey Pathak ",
       "title": "Leveraging the use of digital agriculture and machine learning for accurate prediction of Leaf Area Index (LAI)",
       "publication": "Computers and Electronics in Agriculture",
       "volume": "239",
@@ -247,8 +245,7 @@ const LAB_DATA = {
       "year": "2025",
       "publisher": "Elsevier, https://doi.org/10.1016/j.compag.2025.110947",
       "type": "Journal",
-      "doi": "https://doi.org/10.1016/j.compag.2025.110947"
-    },
+      "doi": "https://doi.org/10.1016/j.compag.2025.110947"},
 
       ],
       google_scholar: "https://scholar.google.com/citations?user=TmQQe0sAAAAJ&hl=en",
