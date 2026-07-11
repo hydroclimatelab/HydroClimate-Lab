@@ -282,7 +282,7 @@ const LAB_DATA = {
     {
       id: "Nivedita",
       name: "Nivedita Dubey",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Climate Modelling",
       photo: "images/Nivedita.jpeg",
@@ -308,7 +308,7 @@ const LAB_DATA = {
     {
       id: "Sumit",
       name: "Sumit Vishwakarma",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Crop Monitoring",
       photo: "images/Sumit.jpg",
@@ -334,7 +334,7 @@ const LAB_DATA = {
     {
       id: "Kshitij",
       name: "Kshitish",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Climate Modelling",
       photo: "images/kshitij.jpeg",
@@ -359,7 +359,7 @@ const LAB_DATA = {
     {
       id: "Basavaraj",
       name: "Basavaraj Bijali",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Data Science",
       photo: "images/Basavaraj.jpeg",
@@ -384,7 +384,7 @@ const LAB_DATA = {
     {
       id: "anand-g",
       name: "Anand Gupta",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Atmospheric Rivers, Extreme Precipitation",
       photo: "images/Anand.png",
@@ -409,7 +409,7 @@ const LAB_DATA = {
     {
       id: "dilip-g",
       name: "Dilip Patidar",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "",
       photo: "images/Dilip.jpeg",
@@ -434,7 +434,7 @@ const LAB_DATA = {
     {
       id: "Pramod-k",
       name: "Pramod Chouhan",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "",
       photo: "images/Pramod.jpeg",
@@ -459,7 +459,7 @@ const LAB_DATA = {
     {
       id: "rohit-kumar",
       name: "Rohit Rahangdale",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "",
       photo: "images/Rohit.jpeg",
@@ -484,7 +484,7 @@ const LAB_DATA = {
     {
       id: "Tanusri",
       name: "Tanusri Baidya",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "",
       photo: "images/Tanushri.jpeg",
@@ -509,7 +509,7 @@ const LAB_DATA = {
     {
       id: "megha-p",
       name: "Megha P.",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Agro-Informatics, Geospatial Analysis",
       photo: "images/Megha.jpeg",
@@ -534,7 +534,7 @@ const LAB_DATA = {
     {
       id: "ark-raj",
       name: "Ark Raj",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Climate Modeling, Land Surface",
       photo: "images/Ark.jpeg",
@@ -559,7 +559,7 @@ const LAB_DATA = {
     {
       id: "bikash",
       name: "Bikash Ranjan Behera",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Climate Modelling, RS and GIS, WRF model",
       photo: "images/Bikash.jpeg",
@@ -584,7 +584,7 @@ const LAB_DATA = {
     {
       id: "Nida",
       name: "Nida Fathima",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Design of Drippers, Computational fluid dynamics modelling",
       photo: "images/Nida.jpeg",
@@ -609,7 +609,7 @@ const LAB_DATA = {
     {
       id: "Chitta",
       name: "Chitta Ranjan Dash",
-      role: "Alumni",
+      role: "M.Tech",
       category: "Alumni",
       research: "Climate modelling",
       photo: "images/Chitta.jpeg",
@@ -635,7 +635,7 @@ const LAB_DATA = {
       id: "Babji-1",
       name: "Babji",
       role: "M.Tech",
-      category: "Master Students",
+      category: "Alumni",
       research: "Climate Modeling, Land Surface",
       photo: "images/Babji.jpg",
       initials: "AR",
@@ -660,7 +660,7 @@ const LAB_DATA = {
       id: "Jayant1",
       name: "Jayant Chand",
       role: "M.Tech",
-      category: "Master Students",
+      category: "Alumni",
       research: "Crop monitoring, AL/ML",
       photo: "images/Jayant.jpeg",
       initials: "Jy",
@@ -685,7 +685,7 @@ const LAB_DATA = {
       id: "Bibaswan",
       name: "Bibaswan Bhattacharya",
       role: "M.Tech",
-      category: "Master Students",
+      category: "Alumni",
       research: "Climate Modelling, WRF",
       photo: "images/Bibaswan.jpeg",
       initials: "BB",
